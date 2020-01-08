@@ -1,0 +1,120 @@
+body {
+    background-image:url(images/Background1.jpg);
+}
+
+
+
+
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    font-family: 'Bowlby One SC', cursive;
+
+}
+
+
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+
+
+.logo  {
+        margin-right: auto;
+}
+
+
+
+
+
+li {
+    margin-right: 3%;
+}
+
+
+li:hover {
+    text-decoration-line: underline;
+    color: aqua;
+    height: 4vh;
+    text-shadow: 2em;
+}
+
+
+.active {
+        color: aqua;
+}
+
+a {
+    color: white;
+    text-decoration-line: none;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.bovenlogo {
+    right: -100%;
+    display:none;
+}
+
+
+
+
+.mobiellogo {
+        border:0%;
+        margin: auto;
+        margin-top: 10vh;
+        margin-bottom: 13vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 30vh;
+}
+
+@media (min-width:40em) {
+
+    .mobiellogo {
+        display:none
+    }
+
+
+.bovenlogo  {
+        border:0%;
+        margin: auto;
+        margin-top: 10vh;
+        margin-bottom: 13vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 60vh;
+}
+
+}
+
+.albums {
+        display: flex;
+        justify-content:space-around;
+        margin-bottom: 20vh;
+        margin-top: 15vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
