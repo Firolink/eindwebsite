@@ -1,34 +1,38 @@
 body {
-    background-image:url(images/Background1.jpg);
+    background-image: url(images/Background1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-
 
 
 
 
 h1 {
     text-align: center;
-    font-size: 4em;
+    font-size: 1.5em;
     color: white;
     font-family: 'Bowlby One SC', cursive;
+    margin-top: 15vh;
 
 }
 
 
 
 ul {
-    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 
+
 }
 
 
 
-.logo  {
-        margin-right: auto;
+li:first-child {
+    margin-right: auto;
+    width: 30vw;
+
 }
 
 
@@ -37,19 +41,20 @@ ul {
 
 li {
     margin-right: 3%;
+    list-style: none;
+
 }
 
 
-li:hover {
+a:hover {
     text-decoration-line: underline;
     color: aqua;
-    height: 4vh;
-    text-shadow: 2em;
+    text-shadow: 5em;
 }
 
 
 .active {
-        color: aqua;
+    color: aqua;
 }
 
 a {
@@ -62,32 +67,92 @@ a {
 
 .bovenlogo {
     right: -100%;
-    display:none;
+    display: none;
 }
 
 
 
 
 .mobiellogo {
-        border:0%;
-        margin: auto;
-        margin-top: 10vh;
-        margin-bottom: 13vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        height: 30vh;
+    border: 0%;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 13vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 30vh;
 }
 
-@media (min-width:40em) {
+
+
+.albums {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 13vh;
+
+
+
+}
+
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+}
+
+
+.videos img {
+    border-radius: 10px;
+    margin-bottom: 1vh;
+
+
+}
+
+
+.videos figcaption {
+    margin-bottom: 5vh;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:60em) {
+
+
+    h1 {
+        text-align: center;
+        font-size: 4em;
+        color: white;
+        font-family: 'Bowlby One SC', cursive;
+    }
 
     .mobiellogo {
-        display:none
+        display: none
     }
 
 
-.bovenlogo  {
-        border:0%;
+    .bovenlogo {
+        border: 0%;
         margin: auto;
         margin-top: 10vh;
         margin-bottom: 13vh;
@@ -95,26 +160,25 @@ a {
         flex-direction: row;
         justify-content: flex-end;
         height: 60vh;
-}
 
-}
 
-.albums {
+    }
+
+
+    .albums {
         display: flex;
-        justify-content:space-around;
-        margin-bottom: 20vh;
-        margin-top: 15vh;
+        flex-direction: row;
+        justify-content: space-around;
+
+
+    }
+
+    .videos {
+        display: flex;
+        flex-flow: wrap;
+        margin-left: 4.5vw;
+    }
+
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
