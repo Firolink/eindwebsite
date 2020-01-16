@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
-    <script src="javascript.js"></script>
+    <script src="js.js"></script>
 </head>
 
 <body>
@@ -26,10 +26,47 @@
 
     </header>
 
+    <section class="about">
+        <h1>Meet the band</h1>
+        <img src="images/band.jpg" alt="Band group foto.">
+        <p>Starbomb is an Outer Space-based Synthpop/Hip-Hop Supergroup consisting of Arin Hanson of Egoraptor and Game Grumps, and Danny Sexbang and Ninja Brian of Ninja Sex Party. Starbomb's focus is to write funny raps and jams about pop culture, mostly video games. Also their focus is to make good music. Mostly the second one. But the first one's important too. So maybe both equally.</p>
+    </section>
+
+    <section>
+        <h2>Contact us!</h2>
 
 
 
+        <form action="">
+            <fieldset>
+                <label for="name">
+                    Your Name
+                </label>
+                <input type="text" name="name" required />
+                <label for="email">
+                    Your email
+                </label>
+                <input type="email" name="email" required>
+            </fieldset>
+            <fieldset class="message">
+                <label for="message">
+                    Type your message here.
+                </label>
+                <textarea name="message" id="" cols="70" rows="10" placeholder="type here"></textarea>
+                <input type="submit" value="Send">
+            </fieldset>
 
+
+        </form>
+
+    </section>
+
+    <footer>
+        <a href="https://twitter.com/starbomb"><img src="images/twitter.png" alt="starbomb twitter link"></a>
+        <a href="https://open.spotify.com/artist/1DLBs2535MM32RYqirYYY4"><img src="images/spotify.png" alt="Starbomb spotify link"></a>
+        <button type="button" onclick="background()">Lazers?</button>
+
+    </footer>
 
 </body>
 

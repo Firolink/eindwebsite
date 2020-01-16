@@ -1,5 +1,8 @@
+/* Bijna al mijn gebruik van flexbox heb ik te danken aan flexbox froggy.*/
+
+
 body {
-    background-image: url(images/Background1.jpg);
+    background-image: url(images/Background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -7,35 +10,19 @@ body {
 
 
 
-h1 {
-    text-align: center;
-    font-size: 1.5em;
-    color: white;
-    font-family: 'Bowlby One SC', cursive;
-    margin-top: 15vh;
-
-}
-
-
 
 ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
 
-
 }
 
 
 
-li:first-child {
-    margin-right: auto;
-    width: 30vw;
 
-}
-
-
+li:first-child {}
 
 
 
@@ -46,7 +33,7 @@ li {
 }
 
 
-a:hover {
+li a:hover {
     text-decoration-line: underline;
     color: aqua;
     text-shadow: 5em;
@@ -57,7 +44,7 @@ a:hover {
     color: aqua;
 }
 
-a {
+li a {
     color: white;
     text-decoration-line: none;
     font-size: 1.5em;
@@ -68,6 +55,7 @@ a {
 .bovenlogo {
     right: -100%;
     display: none;
+
 }
 
 
@@ -85,25 +73,35 @@ a {
 }
 
 
-
-.albums {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: auto;
-    margin-top: 10vh;
-    margin-bottom: 13vh;
-
-
+h1,
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    font-family: 'Bowlby One SC', cursive;
+    margin-top: 15vh;
 
 }
 
 
+
+.albums {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+
+}
+
+
+
+
+
 .videos {
     display: flex;
-    flex-direction: column;
+    flex-flow: wrap;
     max-width: 100%;
+    justify-content: center;
+
 
 }
 
@@ -111,12 +109,15 @@ a {
 .videos img {
     border-radius: 10px;
     margin-bottom: 1vh;
+    width: 17em;
+
+
 
 
 }
 
 
-.videos figcaption {
+figcaption {
     margin-bottom: 5vh;
     color: white;
     text-align: center;
@@ -127,16 +128,102 @@ a {
 
 
 
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.about img {
+    width: 80vw;
+}
 
 
+.about p {
+    color: white;
+    width: 80vw;
+    font-family: 'Raleway', sans-serif;
+}
 
 
+form {
+    display: flex;
+    flex-flow: wrap;
+    margin-bottom: 4em;
 
+
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.message {
+    width: 20em;
+}
+
+
+button {
+    border-radius: 20%;
+    background-color: #000120;
+    margin-left: 2em;
+    margin-top: 3em;
+    height: 5em;
+    color: lawngreen;
+    font-family: 'Raleway', sans-serif;
+    border-style: dashed;
+    border-color: lawngreen;
+
+}
+
+
+footer {
+    margin-top: 15em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
 
 
 
 
 @media (min-width:60em) {
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+
+
+
+
+    li:first-child {
+        margin-right: auto;
+        width: 30vw;
+
+    }
+
+
+
+    li {
+        margin-right: 3%;
+        list-style: none;
+
+    }
+
+
+
+
 
 
     h1 {
@@ -147,7 +234,8 @@ a {
     }
 
     .mobiellogo {
-        display: none
+        display: none;
+        width: 30vw;
     }
 
 
@@ -159,7 +247,7 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        height: 60vh;
+        width: 50em;
 
 
     }
@@ -167,8 +255,8 @@ a {
 
     .albums {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-flow: wrap;
+        justify-content: center;
 
 
     }
@@ -176,9 +264,41 @@ a {
     .videos {
         display: flex;
         flex-flow: wrap;
-        margin-left: 4.5vw;
+        max-width: 100%;
+
+    }
+
+    .videos img {
+        border-radius: 10px;
+        margin-bottom: 1vh;
+        width: 31em;
+
     }
 
 
+    .about img {
+        width: 40vw;
+    }
+
+
+    .about p {
+        color: white;
+        width: 40vw;
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        margin-left: 35%;
+
+    }
+
+    label {
+        color: white;
+        font-family: 'Raleway', sans-serif;
+    }
 
 }
